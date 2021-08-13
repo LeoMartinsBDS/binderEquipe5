@@ -1,0 +1,40 @@
+#!/bin/bash
+
+mkdir ${MARIADB_HOME}/mariadb-data
+
+touch ${MARIADB_HOME}/server-config.cnf
+echo "[server]"                           >> ${MARIADB_HOME}/server-config.cnf
+echo "user=${USER}"                       >> ${MARIADB_HOME}/server-config.cnf
+echo "basedir=${MARIADB_HOME}"            >> ${MARIADB_HOME}/server-config.cnf
+echo "datadir=${MARIADB_HOME}/mariadb-data" >> ${MARIADB_HOME}/server-config.cnf
+echo "socket=${MARIADB_HOME}/socket"      >> ${MARIADB_HOME}/server-config.cnf
+echo "port=3306"                          >> ${MARIADB_HOME}/server-config.cnf
+
+$MARIADB_HOME/scripts/mysql_install_db  --defaults-file=$MARIADB_HOME/server-config.cnf \
+                                        --user=${USER}                                  \
+                                        --basedir=${MARIADB_HOME}                       \
+                                        --datadir=${MARIADB_HOME}/mysql-data            \
+                                        --socket=${MARIADB_HOME}/socket    
+
+cd     ${MARIADB_HOME} && \
+${MARIADB_HOME}/bin/mariadbd-safe --datadir=${MARIADB_HOME}/mariadb-data  --skip-grant-tables &
+
+# waiting for mariadbd startup
+while ! mariadb-admin ping -h 127.0.0.1 --silent; do
+    echo "MariaDB is down...";
+    sleep 1
+done
+
+echo "MariaDB is up!";
+
+echo "Importing Databases to MariaDB"
+${MARIADB_HOME}/bin/mariadb < ~/resources/datasets/movielens-data.sql 
+${MARIADB_HOME}/bin/mariadb < ~/resources/datasets/acme-company.sql 
+cd ~/resources/datasets/sakila-db && ${MARIADB_HOME}/bin/mariadb < sakila-schema.sql && ${MARIADB_HOME}/bin/mariadb < sakila-data.sql
+cd ~/resources/datasets/world-db && ${MARIADB_HOME}/bin/mariadb < world.sql 
+cd ~/resources/datasets/employees && ${MARIADB_HOME}/bin/mariadb < employees.sql 
+
+cd ~
+
+echo "Ready"
+touch ~/ready

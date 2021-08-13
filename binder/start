@@ -1,0 +1,33 @@
+#!/bin/bash
+#MYSQL
+
+# manking start files executable
+chmod +x ~/binder/start.mysql 
+chmod +x ~/binder/start.mariadb 
+chmod +x ~/binder/start.vscode 
+
+
+# starting mysql or mariadb in parallel
+~/binder/start.mariadb   &
+# ~/binder/start.mysql   &
+
+# executing vscode-related startup commands
+~/binder/start.vscode   &
+
+cd ~
+echo " " >> .gitignore
+echo "resources/local/" >> .gitignore
+echo ".local/" >> .gitignore
+echo "local-home/" >> .gitignore
+
+#CASSANDRA
+
+mkdir logs
+
+chmod +x ~/binder/start.cassandra 
+
+# starting mongodb
+~/binder/start.cassandra   &
+
+# DO NOT REMOVE(!) 
+exec "$@"
