@@ -52,10 +52,12 @@ DROP TABLE IF EXISTS mensagem;
 CREATE TABLE mensagem(
 	id INT PRIMARY KEY AUTO_INCREMENT,
 	forumid INT NOT NULL,
+	consumidorid INT NOT NULL,
 	data DATE NOT NULL,
 	titulo VARCHAR(50) NOT NULL,
 	mensagem VARCHAR(200) NOT NULL,
 	FOREIGN KEY (forumid) REFERENCES forumassinatura(id) ON DELETE CASCADE
+	FOREIGN KEY (consumidorid) REFERENCES consumidor(id) ON DELETE CASCADE
 );
 
 DROP TABLE IF EXISTS avaliacao;
