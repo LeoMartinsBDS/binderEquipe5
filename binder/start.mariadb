@@ -29,7 +29,7 @@ echo "MariaDB is up!";
 
 echo "Importing Databases to MariaDB"
 ${MARIADB_HOME}/bin/mariadb < ~/resources/datasets/createTable.sql 
-cd ~/resources/datasets && ${MARIADB_HOME}/bin/mariadb < sqlconsumidores.sql && ${MARIADB_HOME}/bin/mariadb < sqlassinatura.sql && ${MARIADB_HOME}/bin/mariadb < assinantes.sql
+cd ~/resources/datasets && ${MARIADB_HOME}/bin/mariadb < sqlconsumidores.sql && ${MARIADB_HOME}/bin/mariadb < sqlAssinatura.sql && ${MARIADB_HOME}/bin/mariadb < assinantes.sql
 
 cd ~
 
