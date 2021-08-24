@@ -1,3 +1,5 @@
+USE marketcamp;
+
 INSERT INTO forumassinatura VALUES  ('Alteração de plano', '2021-05-15'),
                                     ('Tipo de assinatura', '2021-05-20'),
                                     ('Cancelamento de assinatura', '2021-06-21'),

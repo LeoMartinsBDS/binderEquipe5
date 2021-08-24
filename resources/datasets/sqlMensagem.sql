@@ -1,3 +1,5 @@
+USE marketcamp;
+
 INSERT INTO mensagem VALUES (1, 1, '2021-05-15', 'Alteração online', 'Com devo prossegir para alterar meu plano de Silver para TOP? Consigo fazer online?'),
                             (1, 2, '2021-05-15', 'Alteração', 'Eu acho que no campo de configurações é possível alterar, pelo menos era assim no passado...'),
                             (1, 3, '2021-05-15', 'Tá errado', 'Tá errado, alteração de plano tem que fazer diretamente no atendimento online, não tem como realizar sozinho pelo sistema!'),
