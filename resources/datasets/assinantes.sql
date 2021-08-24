@@ -1,3 +1,5 @@
+USE marketcamp;
+
 INSERT INTO assinante (planoid,consumidorid, dataMensalidade) VALUES (4, 2, '2021-01-01'),
 																	 (6, 5, '2019-12-10'),
 																	 (1, 12,'2016-05-25'),

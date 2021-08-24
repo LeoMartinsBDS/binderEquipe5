@@ -1,3 +1,5 @@
+USE marketcamp;
+
 INSERT INTO consumidor (nome,cpf,rua,bairro,cidade) VALUES ('Altair Ibn La Ahad', '12345678910', 'Rua Eden', 'Credo', 'Constantinopla'),
                                                            ('Ezio Auditore da Firenze', '98712345692', 'Rua Requiescat In Pace', 'Irmandade', 'Vaticano'),
                                                            ('Connor Kenway', '13234123131', 'Rua Nova York', 'Brooklin', 'Boston'),

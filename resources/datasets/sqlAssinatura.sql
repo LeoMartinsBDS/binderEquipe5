@@ -1,3 +1,5 @@
+USE marketcamp;
+
 INSERT INTO planoassinatura (nomeexibicao, descricao) VALUES ('PLANO TOP', 'Este é um plano TOP para você que é uma pessoa TOP.'),
 															 ('PLANO LITTLE TOP', 'Este é um plano TOP para você que é uma pessoa pouco TOP.'),
 															 ('PLANO GIANT TOP', 'Este é um plano TOP para você que é uma pessoa MUITO TOP.'),
