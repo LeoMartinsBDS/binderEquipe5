@@ -29,9 +29,6 @@ echo "MariaDB is up!";
 
 echo "Importing Databases to MariaDB"
 ${MARIADB_HOME}/bin/mariadb < ~/resources/datasets/createTable.sql 
-#cd ~/resources/datasets/sakila-db && ${MARIADB_HOME}/bin/mariadb < sakila-schema.sql && ${MARIADB_HOME}/bin/mariadb < sakila-data.sql
-#cd ~/resources/datasets/world-db && ${MARIADB_HOME}/bin/mariadb < world.sql 
-#cd ~/resources/datasets/employees && ${MARIADB_HOME}/bin/mariadb < employees.sql 
 
 cd ~
 
