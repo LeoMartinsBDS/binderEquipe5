@@ -56,7 +56,7 @@ CREATE TABLE mensagem(
 	data DATE NOT NULL,
 	titulo VARCHAR(50) NOT NULL,
 	mensagem VARCHAR(200) NOT NULL,
-	FOREIGN KEY (forumid) REFERENCES forumassinatura(id) ON DELETE CASCADE
+	FOREIGN KEY (forumid) REFERENCES forumassinatura(id) ON DELETE CASCADE,
 	FOREIGN KEY (consumidorid) REFERENCES consumidor(id) ON DELETE CASCADE
 );
 
