@@ -18,9 +18,9 @@ DROP TABLE IF EXISTS meiopagamento;
 
 CREATE TABLE loja(
 	id INT PRIMARY KEY AUTO_INCREMENT,
-	nome VARCHAR(100) NOT NULL,
+	nomeexibicao VARCHAR(100) NOT NULL,
 	cnpj VARCHAR(14) NOT NULL,
-	logradouro VARCHAR(30) NOT NULL,
+	logradouro VARCHAR(200) NOT NULL,
 	emailatendimento VARCHAR(100) NOT NULL,
 	telefone VARCHAR(20) NOT NULL
 );
@@ -35,14 +35,16 @@ CREATE TABLE cargofuncionario(
 CREATE TABLE funcionario(
 	id INT PRIMARY KEY AUTO_INCREMENT,
 	cargoid INT NOT NULL,
+	lojaid INT NOT NULL,
 	nome VARCHAR(100) NOT NULL,
 	cpf VARCHAR(11) NOT NULL,
 	email VARCHAR(100) NOT NULL,
-	logradouro VARCHAR(30) NOT NULL,
+	logradouro VARCHAR(200) NOT NULL,
 	esocialid INT NOT NULL,
 	agenciasalario INT NOT NULL,
 	contasalario VARCHAR(10) NOT NULL,
-	FOREIGN KEY (cargoid) REFERENCES cargofuncionario(id) ON DELETE NO ACTION 
+	FOREIGN KEY (cargoid) REFERENCES cargofuncionario(id) ON DELETE NO ACTION,
+	FOREIGN KEY (lojaid) REFERENCES  loja(id) ON DELETE NO ACTION 
 );
 
 
