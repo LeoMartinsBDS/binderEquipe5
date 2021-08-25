@@ -1,4 +1,4 @@
-use marktcamp;
+use marketcamp;
 
 INSERT INTO mensagem (forumid, consumidorid, data,titulo,mensagem) VALUES (1, 1, '2021-05-15', 'Alteração online', 'Com devo prossegir para alterar meu plano de Silver para TOP? Consigo fazer online?'),
                                                                           (1, 2, '2021-05-15', 'Alteração', 'Eu acho que no campo de configurações é possível alterar, pelo menos era assim no passado...'),
