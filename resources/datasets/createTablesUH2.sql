@@ -55,7 +55,7 @@ CREATE TABLE fornecedor(
 	id INT PRIMARY KEY AUTO_INCREMENT,
 	nome VARCHAR(100) NOT NULL,
 	cnpj VARCHAR(14) NOT NULL,
-	logradouro VARCHAR(30) NOT NULL,
+	logradouro VARCHAR(200) NOT NULL,
 	telefonecontato VARCHAR(20) NOT NULL,
 	email VARCHAR(100) NOT NULL
 );
