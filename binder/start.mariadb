@@ -32,6 +32,7 @@ ${MARIADB_HOME}/bin/mariadb < ~/resources/datasets/createTable.sql
 cd ~/resources/datasets && ${MARIADB_HOME}/bin/mariadb < sqlconsumidores.sql && ${MARIADB_HOME}/bin/mariadb < sqlAssinatura.sql && ${MARIADB_HOME}/bin/mariadb < assinantes.sql && ${MARIADB_HOME}/bin/mariadb < sqlForumAssinatura.sql && ${MARIADB_HOME}/bin/mariadb < sqlMensagem.sql && ${MARIADB_HOME}/bin/mariadb < sqlAvaliacao.sql
 cd ~/resources/datasets && ${MARIADB_HOME}/bin/mariadb < createTablesUH2.sql
 cd ~/resources/datasets && ${MARIADB_HOME}/bin/mariadb < loja_cargo_func.sql
+cd ~/resources/datasets && ${MARIADB_HOME}/bin/mariadb < sqlCentroCusto.sql
 
 
 cd ~
