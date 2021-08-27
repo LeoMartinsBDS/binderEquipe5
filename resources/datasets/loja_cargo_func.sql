@@ -20,5 +20,5 @@ INSERT INTO funcionario (cargoid, lojaid, nome, cpf, email, logradouro, esociali
 																												(4, 4, 'Luis Lopes', 	     '32112412344', 'll@gmail.com','Rua Porto Riquenha, Nova Granada - Mato Grosso', 54, 002, '3365956'),
 																												(5, 4, 'Franklin Branklin',  '34453453312', 'franklinb@hotmail.com','Rua Grove 300, Capão Redondo - São Paulo', 2, 021, '356898141'),
 																												(4, 5, 'Trevor Phillips', 	 '32431233231', 'tpindustries@hotmail.com','Rua Industrial 0, Industrial - Amazonas', 55, 450, '1123131231'),
-																												(4, 5, 'Michael de Santa', 	 '54543253456', 'merrychristmas@hotmail.com','Rua Natal 25, Nordestinalandia - Ceará', 123, 666, '6669999');
+																												(4, 3, 'Michael de Santa', 	 '54543253456', 'merrychristmas@hotmail.com','Rua Natal 25, Nordestinalandia - Ceará', 123, 666, '6669999');
 																												
