@@ -54,7 +54,6 @@ CREATE TABLE mensagem(
 	forumid INT NOT NULL,
 	consumidorid INT NOT NULL,
 	data DATE NOT NULL,
-	titulo VARCHAR(50) NOT NULL,
 	mensagem VARCHAR(200) NOT NULL,
 	FOREIGN KEY (forumid) REFERENCES forumassinatura(id) ON DELETE CASCADE,
 	FOREIGN KEY (consumidorid) REFERENCES consumidor(id) ON DELETE CASCADE
@@ -64,9 +63,11 @@ DROP TABLE IF EXISTS avaliacao;
 CREATE TABLE avaliacao(
 	id INT PRIMARY KEY AUTO_INCREMENT,
 	consumidorid INT NOT NULL,
-	forumassinaturaid INT NOT NULL,
+	mensagemid INT NOT NULL,
 	gostou boolean DEFAULT FALSE,
-	descricaoavaliacao VARCHAR(200) DEFAULT NULL
+	descricaoavaliacao VARCHAR(200) DEFAULT NULL,
+	FOREIGN KEY (consumidorid) REFERENCES consumidor(id) ON DELETE CASCADE,
+	FOREIGN KEY (mensagemid) REFERENCES mensagem(id) ON DELETE CASCADE
 );
 
 COMMIT;
