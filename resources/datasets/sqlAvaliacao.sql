@@ -1,8 +1,8 @@
 USE marketcamp;
 
-INSERT INTO avaliacao (mensagemid, consumidorid, gostou, descricaoavaliacao) VALUES	 (1,10, 1, false, 'Não achei o tópico relevante...'),
-                                                                                     (1,11, 1, true, 'Me ajudou a tirar uma dúvida aqui.'),
-                                                                                     (1,12, 1, true, 'ótimo'),
+INSERT INTO avaliacao (mensagemid, consumidorid, gostou, descricaoavaliacao) VALUES	 (1,10, false, 'Não achei o tópico relevante...'),
+                                                                                     (1,11, true, 'Me ajudou a tirar uma dúvida aqui.'),
+                                                                                     (1,12, true, 'ótimo'),
                                                                                      (4, 2, true, 'que bom que achei a resposta aqui...'),
                                                                                      (5, 2, false, 'sem comentários.'),
                                                                                      (3, 2, false, 'nada com nada'),

@@ -2,8 +2,8 @@ use marketcamp;
 
 INSERT INTO mensagem (forumid, consumidorid, data, mensagem) VALUES   (1, 1, '2021-05-15',  'Com devo prossegir para alterar meu plano de Silver para TOP? Consigo fazer online?'),
 																	  (1, 2, '2021-05-15',  'Eu acho que no campo de configurações é possível alterar, pelo menos era assim no passado...'),
-																	  (1, 3, '2021-05-15',  'Tá errado, alteração de plano tem que fazer diretamente no atendimento online, não tem como realizar sozinho pelo sistema!'),
 																	  (1, 1, '2021-05-1',   'Muito obrigado pela ajuda, vou entrar em contato com o atendimento ao publico.'),
+																	  (1, 3, '2021-05-15',  'Tá errado, alteração de plano tem que fazer diretamente no atendimento online, não tem como realizar sozinho pelo sistema!'),
 																	  (2, 4, '2021-05-20',  'Existe algum plano básico, bem básico para usufruir dos benefícios? Não disponho de muito dinheiro.'),
 																	  (2, 5, '2021-05-20',  'Se vocÊ não encontrou na definição dos planos não tem, é meio obvio.'),
 																	  (2, 6, '2021-05-20',  'Fiquei sabendo que o marktcamp vai inserir um plano de entrada, mas não sei se é verdade, minha tia que me contou.'),
@@ -17,7 +17,7 @@ INSERT INTO mensagem (forumid, consumidorid, data, mensagem) VALUES   (1, 1, '20
 																	  (4, 13, '2021-06-30', 'Esse forum é só para assinantes. A marktcamp não responde aqui. Tenta usar os canais de atendimento.'),
 																	  (4, 12, '2021-06-30', 'Verdade... vou fazer isso.'),
 																	  (5, 3, '2021-07-13',  'Esse plano não está compensando!!! O valor está perto do plano GOLD mas os benefícios estão mais para Bronze. Aff assim não dá não.'),
-																	  (5, 10, '2021-07-13', 'Plano GOLD', 'Muda pro plano GOLD. É um ótimo custo benefício... não perde tempo não.'),
+																	  (5, 10, '2021-07-13', 'Muda pro plano GOLD. É um ótimo custo benefício... não perde tempo não.'),
 																	  (5, 8, '2021-07-13',  'Sinceramente, parte para o bronze logo. Quase a mesma coisa que o silver e é mais barato.'),
 																	  (5, 6, '2021-07-13',  'Minha tia me contou que tem um novo plano de entrada chegando no marktcamp.'),
 																	  (6, 11, '2021-07-21', 'Alguém sabe me dizer se é possivel continuar com plano de assinatura morando no exterior? Estou de partida para Portugal e gostaria de continuar com o plano.'),
