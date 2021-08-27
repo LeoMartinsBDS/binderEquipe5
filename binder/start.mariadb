@@ -33,6 +33,7 @@ cd ~/resources/datasets && ${MARIADB_HOME}/bin/mariadb < sqlconsumidores.sql && 
 cd ~/resources/datasets && ${MARIADB_HOME}/bin/mariadb < createTablesUH2.sql
 cd ~/resources/datasets && ${MARIADB_HOME}/bin/mariadb < loja_cargo_func.sql
 cd ~/resources/datasets && ${MARIADB_HOME}/bin/mariadb < sqlCentroCusto.sql
+cd ~/resources/datasets && ${MARIADB_HOME}/bin/mariadb < sqlMovimentacaoFinanceira.sql
 
 
 cd ~
