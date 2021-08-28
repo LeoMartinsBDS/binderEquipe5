@@ -4,7 +4,8 @@ INSERT INTO loja (nomeexibicao,cnpj,logradouro,emailatendimento,telefone) VALUES
 																				 ('Luiza Magazine',  '31232131241241', 'Rua Tupiniquim 100, Vila Sésamo - SP ', 'atnd@gmail.com', '1112549887'),
 																				 ('Kapow',  		 '13211231212423', 'Rua Disney 20, Disneylandia - RS ', 'kapow@kpw.com.br', '4522364974'),
 																				 ('Gigabyte Comercio Eletronico','65478934568125', 'Rua Rambo 666, Vila Selva - AM ', 'giga@gigabyte.com', '6654987568'),
-																				 ('Mercado Preso',  '65497431529874', 'Rua da Liberdade 300, Liberdade - SP ', 'atendimento@gmail.com', '1203548942');
+																				 ('Mercado Preso',  '65497431529874', 'Rua da Liberdade 300, Liberdade - SP ', 'atendimento@gmail.com', '1203548942'),
+																				 ('PILOTANDO GOSTOSO','65478934568125', 'Av. das Palmeiras 1569, St Industrial Norte - MT', 'pilotando@gostoso.com', '6635110000');
 																				 
 INSERT INTO cargofuncionario (nomecargo, descricaocargo) VALUES ('Presidente', 'O cara que manda em tudo e coloca o filho para trabalhar como chefe (MERITOCRACIA)'),
 																('Gerente Geral', 'Responsável por fazer o gerenciamento de todas as equipes'),
