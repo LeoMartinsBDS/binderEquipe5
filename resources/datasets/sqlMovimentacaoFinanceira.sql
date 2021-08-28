@@ -36,7 +36,11 @@ INSERT INTO movimentacaofinanceira (docFiscalID,
             (19,4,1,'2021-07-01',330.00,1,330.00),
             (20,5,1,'2021-07-11',1200.00,1,1200.00),
             (21,5,1,'2021-07-31',100.00,1,100.00),
-            (22,1,1,'2021-07-30',200.00,1,200.00);
+            (22,1,1,'2021-07-30',200.00,1,200.00),
+            (23,6,1,'2021-07-01',330.00,1,330.00),
+            (24,6,1,'2021-07-11',1200.00,1,1200.00),
+            (25,6,1,'2021-07-31',100.00,1,100.00),
+            (26,6,1,'2021-07-30',200.00,1,200.00);
             
             
 INSERT INTO movimentacaofinanceiraentrada (movimentacaoID,
@@ -53,7 +57,9 @@ INSERT INTO movimentacaofinanceiraentrada (movimentacaoID,
             (8,3,6,8),
             (9,4,8,8),
             (10,5,9,10),
-            (11,1,4,11);
+            (11,1,4,11),
+            (23,1,10,12),
+            (24,2,10,13);
     
 INSERT INTO movimentacaofinanceirasaida (movimentacaoID,
                                          centroDeCustoID,
@@ -70,4 +76,6 @@ INSERT INTO movimentacaofinanceirasaida (movimentacaoID,
             (19,4,7,6,2),
             (20,5,8,8,3),
             (21,5,8,8,4),
-            (22,1,4,1,5);
+            (22,1,4,1,5),
+            (25,1,10,10,4),
+            (26,2,10,10,5);

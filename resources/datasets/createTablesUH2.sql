@@ -2,20 +2,6 @@ BEGIN;
 
 USE marketcamp;
 
-DROP TABLE IF EXISTS loja;
-DROP TABLE IF EXISTS funcionario;
-DROP TABLE IF EXISTS cargofuncionario;
-DROP TABLE IF EXISTS fornecedor;
-DROP TABLE IF EXISTS movimentacaofinanceira;
-DROP TABLE IF EXISTS documentofiscal;
-DROP TABLE IF EXISTS meiopagamento;
-DROP TABLE IF EXISTS movimentacaofinanceiraentrada;
-DROP TABLE IF EXISTS movimentacaofinanceirasaida;
-DROP TABLE IF EXISTS centrodecusto;
-DROP TABLE IF EXISTS documentofiscal;
-DROP TABLE IF EXISTS meiopagamento;
-
-
 CREATE TABLE loja(
 	id INT PRIMARY KEY AUTO_INCREMENT,
 	nomeexibicao VARCHAR(100) NOT NULL,

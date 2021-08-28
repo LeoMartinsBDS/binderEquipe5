@@ -5,7 +5,6 @@ CREATE DATABASE marketcamp;
 
 USE marketcamp;
 
-DROP TABLE IF EXISTS consumidor;
 CREATE TABLE consumidor(
 	id INT PRIMARY KEY AUTO_INCREMENT,
 	nome VARCHAR(100) NOT NULL,
@@ -15,7 +14,6 @@ CREATE TABLE consumidor(
 	cidade VARCHAR(100) NOT NULL
 );
 
-DROP TABLE IF EXISTS consumidortelefone;
 CREATE TABLE consumidortelefone(
 	id INT PRIMARY KEY AUTO_INCREMENT,
 	consumidorid INT NOT NULL,
@@ -24,14 +22,12 @@ CREATE TABLE consumidortelefone(
 	FOREIGN KEY (consumidorid) REFERENCES consumidor(id) ON DELETE CASCADE 
 );
 
-DROP TABLE IF EXISTS planoassinatura;
 CREATE TABLE planoassinatura(
 	id INT PRIMARY KEY AUTO_INCREMENT,
 	nomeexibicao VARCHAR(50) NOT NULL,
 	descricao VARCHAR(200) NOT NULL
 );
 
-DROP TABLE IF EXISTS assinante;
 CREATE TABLE assinante(
 	id INT PRIMARY KEY AUTO_INCREMENT,
 	planoid INT NOT NULL,
@@ -41,14 +37,12 @@ CREATE TABLE assinante(
 	FOREIGN KEY (consumidorid) REFERENCES consumidor(id) ON DELETE CASCADE
 );
 
-DROP TABLE IF EXISTS forumassinatura;
 CREATE TABLE forumassinatura(
 	id INT PRIMARY KEY AUTO_INCREMENT,
 	titulo VARCHAR(30) NOT NULL,
 	dataabertura DATE NOT NULL
 );
 
-DROP TABLE IF EXISTS mensagem;
 CREATE TABLE mensagem(
 	id INT PRIMARY KEY AUTO_INCREMENT,
 	forumid INT NOT NULL,
@@ -59,7 +53,6 @@ CREATE TABLE mensagem(
 	FOREIGN KEY (consumidorid) REFERENCES consumidor(id) ON DELETE CASCADE
 );
 
-DROP TABLE IF EXISTS avaliacao;
 CREATE TABLE avaliacao(
 	id INT PRIMARY KEY AUTO_INCREMENT,
 	consumidorid INT NOT NULL,
