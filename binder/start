@@ -5,12 +5,8 @@
 chmod +x ~/binder/start.mysql 
 chmod +x ~/binder/start.mariadb 
 chmod +x ~/binder/start.vscode 
-chmod +x ~/binder/start.cassandra 
 
 mkdir logs
-
-# starting cassandra
-~/binder/start.cassandra   &
 
 # starting mysql or mariadb in parallel
 ~/binder/start.mariadb   &

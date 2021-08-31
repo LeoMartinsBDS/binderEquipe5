@@ -11,6 +11,3 @@ libaio-dev
 numactl
 libncurses5
 #mariadb-server
-
-#cassandra related
-openjdk-8-jdk
